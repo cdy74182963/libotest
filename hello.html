@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>我的第一个网页</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+  </head>
+  <body>
+    <div class="card">
+      <h1>你好，互联网</h1>
+      <p id="msg">这是我的第一个网页，现在它还只是一个本地的 HTML 文件。</p>
+
+      <button onclick="changeText()">点我试试</button>
+    </div>
+    <script>
+      function changeText() {
+        document.getElementById('msg').textContent = '你刚刚触发了一段 JavaScript。';
+      }
+    </script>
+
+  </body>
+</html>
